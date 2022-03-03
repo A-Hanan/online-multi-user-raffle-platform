@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9005e649.css",
-    "main.js": "/static/js/main.3bb2701c.js",
+    "main.js": "/static/js/main.b0a8d04c.js",
     "static/js/787.592de070.chunk.js": "/static/js/787.592de070.chunk.js",
     "static/media/happyMan5.jpg": "/static/media/happyMan5.3edc227e5690a39ed9de.jpg",
     "static/media/happyMan2.jpg": "/static/media/happyMan2.8b9fcf40fa07b3f62ca3.jpg",
@@ -73,11 +73,11 @@
     "static/media/poppins-v5-latin-900.woff2": "/static/media/poppins-v5-latin-900.4c9cf88341d7f0ccc220.woff2",
     "index.html": "/index.html",
     "main.9005e649.css.map": "/static/css/main.9005e649.css.map",
-    "main.3bb2701c.js.map": "/static/js/main.3bb2701c.js.map",
+    "main.b0a8d04c.js.map": "/static/js/main.b0a8d04c.js.map",
     "787.592de070.chunk.js.map": "/static/js/787.592de070.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9005e649.css",
-    "static/js/main.3bb2701c.js"
+    "static/js/main.b0a8d04c.js"
   ]
 }
