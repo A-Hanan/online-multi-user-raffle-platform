@@ -1,0 +1,76 @@
+.winners__carousel {
+  margin: 5vh 0;
+  margin-bottom: 10vh;
+  width: 100vw;
+  padding: 5vh 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: whitesmoke;
+}
+.winners__carousel > h1 {
+  font-size: 2rem;
+  padding-bottom: 30px;
+  color: black;
+}
+.splide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  width: 80vw;
+  padding: 30px;
+}
+.splide__slide {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  color: black;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+.winner__container {
+  width: 20vw;
+  min-height: 20vh;
+  height: 38vh;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.winner__container > .prize__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.winner__info {
+  z-index: 11;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  display: flex;
+  background: white;
+  height: 20%;
+  width: 100%;
+}
+.winner__info > div > h3 {
+  color: black;
+  font-size: 0.8rem;
+  margin: 5px;
+}
+@media (max-width: 760px) {
+  .winner__container {
+    width: 70vw;
+    min-height: 20vh;
+    height: 38vh;
+    background: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+}

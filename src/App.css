@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Macan, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+:root {
+  /* --first-color: rgba(86, 186, 90, 255); */
+  --first-color: #39b54a;
+  /* --first-color: #39b54a; */
+  --second-color: #36b149;
+  --third-color: #32ac48;
+  --fourth-color: #2ba246;
+  --fifth-color: #1d8541;
+  --sixth-color: #006838;
+  /* --seventh-color: #02213d; */
+  --seventh-color: whitesmoke;
+}
+body {
+  background-color: white !important;
+}

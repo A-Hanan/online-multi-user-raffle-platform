@@ -1,0 +1,166 @@
+.host__raffle__form {
+  min-height: 50vh;
+  width: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.host__raffle__form > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.host__raffle__form form {
+  padding: 50px;
+}
+.host__raffle__form form > div {
+  margin: 30px 0;
+}
+.host__raffle__form .radio__btns {
+  margin-bottom: 5vh;
+  width: 20vw;
+}
+.host__raffle__form label.btn {
+}
+.host__raffle__form label {
+  position: relative !important;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
+.host__raffle__form input {
+  position: relative !important;
+  margin-top: -10px !important;
+}
+.host__raffle__form .agreeTerms__container {
+  background-color: tomato;
+  opacity: 0 !important;
+  box-sizing: border-box;
+  height: max-content;
+  position: relative;
+}
+.host__raffle__form .agreeTerms__container > label {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+}
+.host__raffle__form .agreeTerms__checkbox {
+  background-color: violet;
+}
+.host__raffle__form .dateInput {
+  display: block;
+  width: 50vw;
+  height: 30vh;
+  box-sizing: border-box;
+}
+.host__raffle__form.dateInput > * {
+  position: relative !important;
+}
+.host__raffle__form .react-datetime-picker__inputGroup {
+  display: flex !important;
+}
+.host__raffle__form button {
+  background-color: var(--first-color);
+  border-color: var(--first-color);
+}
+.host__raffle__form button:hover {
+  background-color: var(--fifth-color);
+  border-color: var(--fifth-color);
+}
+
+.host__raffle__form button:active {
+  background-color: var(--second-color);
+}
+.host__raffle__form button:focus {
+  background-color: var(--sixth-color);
+  box-shadow: none !important;
+  border-color: var(--sixth-color);
+}
+.host__raffle__form .radio__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.host__raffle__form .radio__buttons > div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.host__raffle__form .radio__buttons > div > input {
+  width: 40px;
+  margin-right: 10px;
+  margin-top: 3px !important;
+}
+.host__raffle__form .radio__buttons > div > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.host__raffle__form .radio__buttons > div:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.host__raffle__form .radio__buttons > div > input:checked ~ .checkmark {
+  background-color: var(--first-color);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.host__raffle__form .radio__buttons > div > input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.host__raffle__form .radio__buttons > div > .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.error__para {
+  color: rgb(218, 2, 2);
+  display: block;
+}
+@media (max-width: 768px) {
+  .host__raffle__form {
+    min-height: 50vh;
+    width: 95%;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 10vh;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 3%;
+  }
+  .host__raffle__form > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .host__raffle__form form {
+    padding: 20px 10px;
+  }
+  .host__raffle__form form > div {
+    margin: 30px 0;
+  }
+} ;

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contact__container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15vh 20vw;
+}
+.form-container {
+  display: flex;
+  margin-top: 5vh;
+}
+.left-container {
+  flex: 1;
+  height: 480px;
+  background-color: rgba(0, 128, 0, 0.222);
+}
+.right-container {
+  display: flex;
+  flex: 1;
+  height: 460px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.left-container {
+  display: flex;
+  flex: 1;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.left-container p {
+  font-size: 0.9rem;
+  color: black;
+}
+.right-inner-container {
+  width: 70%;
+  height: 80%;
+  text-align: center;
+}
+.left-inner-container {
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+}
+.contact__form > input,
+.contact__form > textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.contact__form > input:focus,
+.contact__form > textarea:focus {
+  outline: 1px solid #00b4cf;
+}
+.contact__form > button {
+  border-radius: 20px;
+  border: 1px solid #39b54a;
+  background-color: #39b54a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+.cotact__form > button:hover {
+  opacity: 0.7;
+}
+@media (max-width: 880px) and (min-width: 600px) {
+  .contact__container {
+    padding: 50px !important;
+    padding-top: 70px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .left-container {
+    display: none;
+  }
+  .lg-view {
+    display: none;
+  }
+
+  .form-container {
+    width: 80vw;
+  }
+  .right-container {
+    width: 100vw !important;
+    padding: 100px;
+    height: 60vh;
+    padding: 0 !important;
+  }
+  .right-inner-container {
+    width: 70vw;
+    margin-top: -150px;
+    margin-left: -70px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .sm-view {
+    display: none;
+  }
+}
+form p {
+  text-align: left;
+}
+.result__para {
+  color: green;
+  margin: 2vh;
+  font-size: 0.8rem;
+}

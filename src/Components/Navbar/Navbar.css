@@ -1,0 +1,245 @@
+:root {
+  --nav-primary-color: black;
+}
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 !important;
+  border-bottom: 1px solid lightgray;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 1000;
+  background-color: var(--seventh-color);
+}
+.nav__logo__container {
+  width: 20vw;
+  height: 100%;
+  padding-bottom: 10px;
+}
+.logo {
+  height: 80px;
+  width: auto;
+  margin-top: -11px;
+}
+.nav__menu__container {
+  width: 60vw;
+  height: 100%;
+  display: flex;
+  margin-top: -15px;
+}
+.nav__menu__container > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.nav__menu__container > ul > li {
+  margin: 0 20px;
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav__menu__container > ul > li:hover {
+  border-bottom: 2px solid var(--first-color);
+}
+.nav__menu__container > ul > li > a {
+  color: var(--nav-primary-color);
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav__menu__container > ul > li > a:hover {
+  color: var(--first-color);
+}
+
+.nav__login__container {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 40px;
+  height: 13vh;
+  margin: 0;
+  margin-top: -11px;
+}
+
+.nav__login__container > h3 {
+  margin: 0 10px;
+  font-size: 1rem;
+  color: var(--nav-primary-color);
+}
+.nav__login__container > h3:hover {
+  color: var(--first-color);
+  cursor: pointer;
+}
+.nav__login__container a {
+  text-decoration: none !important;
+}
+button > .MuiSvgIcon-root {
+  display: none;
+  margin-right: 20px;
+}
+
+.nav__sidebar {
+  position: absolute;
+  top: 10vh;
+  z-index: -1;
+  position: fixed;
+  transition: all 0.3 ease;
+}
+.nav__sidebar.show {
+  z-index: 10;
+}
+.nav__sidebar__content {
+  background-color: white;
+  height: 90vh;
+  width: 70vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.nav__sidebar__content {
+  transform: translateX(-80vw);
+  transition: all 0.3s ease;
+}
+.nav__sidebar__content.show {
+  transform: translateX(0);
+  overflow-y: scroll;
+}
+
+.nav__sidebar__content > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.nav__sidebar__content > ul > li {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.nav__sidebar__content > ul > li > a {
+  text-decoration: none;
+  color: var(--nav-primary-color);
+  font-size: 1rem;
+}
+.nav__sidebar__content > div {
+  list-style-type: none;
+  padding: 30px;
+  display: flex;
+}
+.nav__sidebar__content > div > h3 {
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: var(--nav-primary-color);
+}
+.nav__sidebar__content li a {
+  padding: 5px;
+  font-size: 0.9rem;
+  padding-left: 30px;
+  color: var(--nav-primary-color) !important;
+}
+.nav__sidebar__content li {
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+}
+.nav__sidebar__content li a {
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+}
+.nav__sidebar__content li:hover {
+  color: white !important;
+  background: var(--first-color);
+}
+.nav__sidebar__content li a:hover {
+  color: white !important;
+  background: var(--first-color);
+}
+.host__raffle__menu {
+  border-bottom: 1px solid lightgray;
+  transition: all 0.3s ease-in;
+  height: 0px;
+  opacity: 0;
+}
+.host__raffle__menu.show {
+  transform: scale(1, 1);
+  height: auto;
+  opacity: 1;
+  padding: 5px 30px;
+}
+.host__raffle__menu > li > a {
+  text-decoration: none;
+  color: 1px solid var(--nav-primary-color);
+  padding-left: 30px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  button > .MuiSvgIcon-root {
+    display: block;
+  }
+  .navbar {
+    position: fixed !important;
+  }
+  .nav__logo__container {
+    width: 50vw;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .nav__login__container {
+    display: none;
+  }
+  .nav__menu__container {
+    display: none;
+  }
+}
+
+.nav__verification__info {
+  display: none;
+}
+.nav__verification__info.show {
+  position: fixed;
+  height: 8vh;
+  top: 10vh;
+  left: 0;
+  width: 100vw;
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(198, 255, 198);
+  z-index: 10000000000000000000;
+}
+.nav__verification__info > p {
+  height: 100%;
+  margin: 0 3vw;
+  display: flex;
+  align-items: center;
+}
+.nav__verification__info > button {
+  border: none;
+  background: whitesmoke;
+  color: var(--first-color);
+  font-weight: 1200;
+  padding: 3px;
+  transition: all 0.3s ease;
+}
+.nav__verification__info > button:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+}

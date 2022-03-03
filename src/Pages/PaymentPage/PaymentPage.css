@@ -1,0 +1,121 @@
+.payment__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 100000000000000000000000000000000000000000000000;
+}
+.payment__container {
+  background: white;
+  max-height: 80%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  flex-direction: column;
+  gap: 4vh;
+  position: relative;
+}
+.payment__container > .MuiSvgIcon-root {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.payment__container > h1 {
+  font-size: 2rem;
+}
+.ticket__incrementor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.ticket__incrementor > h6 {
+  color: black;
+}
+.ticket__incrementor > div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.ticket__incrementor > div > button {
+  background: var(--first-color);
+  color: white;
+
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+}
+.ticket__incrementor > h4 {
+}
+.purchase__btn {
+  background: var(--first-color);
+  border: none;
+}
+.purchase__btn:hover {
+  background: white;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+}
+
+@media (max-width: 768px) {
+  .payment__container {
+    background: white;
+    max-height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .payment__container > h1 {
+    font-size: 2rem;
+  }
+  .ticket__incrementor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .ticket__incrementor > h6 {
+    color: black;
+  }
+  .ticket__incrementor > div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .ticket__incrementor > div > button {
+    background: var(--first-color);
+    color: white;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+  }
+  .ticket__incrementor > h4 {
+  }
+  .purchase__btn {
+    background: var(--first-color);
+    border: none;
+  }
+  .purchase__btn:hover {
+    background: white;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+  }
+}

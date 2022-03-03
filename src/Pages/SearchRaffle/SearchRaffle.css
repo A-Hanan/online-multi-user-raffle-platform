@@ -1,0 +1,300 @@
+:root {
+  --primary-color: rgb(0, 128, 64);
+}
+.search__raffles {
+  padding: 15vh 5vw;
+
+  /* background: white; */
+}
+/*********Search Container ************************/
+.search__container {
+  margin-top: 5vh;
+  height: auto;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* border-bottom: 1px solid lightgray; */
+  /* background-color: whitesmoke; */
+  position: relative;
+}
+.input__area {
+  /* flex: 0.7; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40vw;
+  background-color: white;
+  border: 2px solid var(--first-color);
+  padding: 10px;
+  border-radius: 0px;
+}
+.input__area > .MuiSvgIcon-root {
+  flex: 0.1;
+  width: max-content;
+  padding-left: 20px;
+  font-size: 1.9rem;
+  color: gray;
+}
+.input__area > input {
+  flex: 0.9;
+  height: 80%;
+  min-height: 30px;
+  border: none;
+}
+.input__area > input[type="text"]::placeholder {
+  color: gray;
+}
+.input__area > button {
+  flex: 0.2;
+  height: 80%;
+  background-color: var(--primary-color);
+  color: white;
+  min-height: 30px;
+}
+.sorting__area {
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 5vw;
+  bottom: 0;
+}
+.sorting__area > * {
+  padding: 10px;
+}
+.sorting__area > h6 {
+}
+.sorting__area > select {
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .search__raffles {
+    padding: 0 1vw;
+  }
+  .search__container {
+    margin-top: 1vh;
+    padding: 15px 0;
+  }
+
+  .input__area {
+    width: 80vw;
+    padding: 5px;
+  }
+  .input__area > input {
+    height: 4vh;
+  }
+  .input__area > input[type="text"]::placeholder {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .input__area > button {
+    flex: 0.2;
+    height: 4vh;
+  }
+  .sorting__area {
+    align-items: flex-start;
+  }
+  .sorting__area > * {
+    padding: 0;
+  }
+  .sorting__area > h6 {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    padding: 5px;
+  }
+  .sorting__area > select {
+    width: 60%;
+    font-size: small;
+  }
+}
+/******* RaffleItems css ***********************/
+.raffle__items {
+  margin-top: 5vh;
+  /* background-color: white; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+  min-height: 50vh;
+}
+.raffle__item {
+  background-color: white;
+  width: 25vw;
+  max-width: 330px;
+  min-width: 270px;
+  height: 420px;
+  margin-bottom: 50px;
+  /* margin: 20px; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  position: relative;
+  padding: 20px;
+  /* border-radius: 10px; */
+}
+.raffle__item:hover {
+  cursor: pointer;
+  background-color: rgb(57, 181, 74, 0.2);
+}
+.raffle__item__info {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.raffle__item__info > .title__raffle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1rem !important;
+  font-style: inherit !important;
+  margin-top: -7px;
+}
+
+.raffle__item__seller__info {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+.raffle__item__info__data {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.raffle__item__info__data > div > * {
+  text-align: center;
+}
+.raffle__item__info > .raffle__image__box {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.raffle__item__info > .raffle__image__box > img {
+  max-width: 90%;
+  max-height: 230px;
+  min-height: 200px;
+}
+.raffle__item__info > .title__raffle {
+  padding: 5px;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+.raffle__item__seller__info > .dp {
+  margin: 0 15px;
+}
+.raffle__item__seller__info > .name {
+  color: var(--second-color);
+  font-size: 1.2rem;
+  padding-top: 7px;
+  font-weight: normal;
+}
+@media (max-width: 768px) {
+  .raffle__items {
+    padding: 10px;
+  }
+  .raffle__item {
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    height: 300px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  .raffle__item__info {
+    width: 100%;
+    height: 250px;
+  }
+  .raffle__item__seller__info {
+    height: 50px;
+
+    padding-bottom: 10px;
+  }
+  .raffle__item__info__data {
+    height: 50px;
+  }
+  .raffle__item__info__data > div > h6 {
+    font-size: 0.6rem;
+  }
+  .raffle__item__info__data > div > p {
+    font-size: 0.6rem;
+  }
+  .raffle__item__info > .raffle__image__box {
+    height: 180px;
+  }
+  .raffle__item__info > .raffle__image__box > img {
+    max-width: 90%;
+    max-height: 170px;
+    min-height: 150px;
+  }
+  .raffle__item__info > .title__raffle {
+    padding: 5px;
+    padding-top: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+  .raffle__item__seller__info > .dp {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .raffle__item__seller__info > .name {
+    color: var(--second-color);
+    font-size: 0.9rem;
+  }
+}
+/****react paginated css **************/
+a.page-link {
+  color: var(--first-color) !important;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff !important;
+  background-color: var(--first-color) !important;
+  border-color: var(--first-color) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.page-item.active {
+  box-shadow: none !important;
+  border: none !important;
+}
+.page-item:hover .page-link {
+  background-color: rgb(57, 181, 74, 0.2);
+}
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+@media (max-width: 768px) {
+  ul.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+  }
+  a.page-link {
+    color: var(--first-color) !important;
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 344px) {
+  a.page-link {
+    color: var(--first-color) !important;
+    font-size: 0.6rem !important;
+    padding: 5px !important;
+  }
+}

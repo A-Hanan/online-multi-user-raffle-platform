@@ -1,0 +1,117 @@
+.pending__raffles__container {
+  min-height: 70vh;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .pending__raffles__container {
+    margin-top: 12vh;
+    width: 90%;
+  }
+}
+
+.pending__raffle {
+  margin-top: 8vh;
+  background-color: white;
+  width: 80%;
+  border-bottom: 1px solid lightgray;
+}
+.pending__raffle .info__container {
+  display: flex;
+}
+.pending__raffle__data {
+  flex: 0.6;
+}
+.pending__raffle__data > .data {
+  display: flex;
+  align-items: center;
+}
+.pending__raffle__data > .data h4 {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  width: 10vw;
+}
+.pending__raffle__data > .data h5 {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--second-color);
+  width: 15vw;
+}
+.pending__raffle__image {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pending__raffle__image > img {
+  max-width: 25vw;
+  max-height: 30vh;
+}
+
+.pending__raffle .options__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 0;
+  background-color: whitesmoke;
+}
+.pending__raffle__option {
+  display: flex;
+  padding: 20px;
+  color: var(--second-color);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .pending__raffle {
+    margin-top: 5vh;
+    width: 90%;
+  }
+  .pending__raffle .info__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .pending__raffle__data {
+    flex: 1;
+    width: 80%;
+  }
+  .pending__raffle__data > .data h4 {
+    font-size: 0.7rem;
+    width: 50%;
+  }
+  .pending__raffle__data > .data h5 {
+    font-size: 0.7rem;
+    width: 50%;
+  }
+  .pending__raffle__image {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+  }
+  .pending__raffle__image > img {
+    max-width: 50%;
+    max-height: 40vh;
+  }
+
+  .pending__raffle .options__container {
+    margin: 5vh 0;
+  }
+  .pending__raffle__option {
+    padding: 10px;
+  }
+  .pending__raffle__option > * {
+    font-size: 0.7rem;
+  }
+  .pending__raffle__option > .MuiSvgIcon-root {
+    font-size: 0.8rem;
+    margin-right: 3px;
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  --dashboard-primary-color: #39b54a;
+  --dashboard-secondary-color: #006838;
+  --dashboard-tertiory-color: rgba(0, 128, 0, 0.222);
+}
+
+.dashboard {
+  height: 90vh;
+  width: 20vw;
+  position: fixed;
+  background: var(--dashboard-tertiory-color);
+  top: 10vh;
+  right: 0;
+  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    display: none;
+  }
+}
+.dashboard__upper__container {
+  padding: 10px 20px;
+}
+.dashboard__upper__container > h2 {
+  font-size: 1.3rem;
+  height: 5vh;
+  margin-top: 5vh;
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+.dashboard__upper__container > h6 {
+  height: 3vh;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+.dashboard__footer {
+  background: black;
+  padding: 10px 20px;
+}
+.dashboard__footer > .nav__links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.dashboard__footer > .nav__links > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dashboard__footer > .social__links > a > .MuiSvgIcon-root {
+  color: white;
+  cursor: pointer;
+}

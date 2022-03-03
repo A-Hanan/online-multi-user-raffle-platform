@@ -1,0 +1,144 @@
+.testimonials__container {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials__container > h1 {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  color: Black;
+  text-transform: capitalize;
+}
+.testimonials__container > h1:after {
+  background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.testimonial {
+  color: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 0px 80px;
+  max-width: 768px;
+  position: relative;
+  background-color: var(--first-color);
+  background-color: white;
+  height: max-content;
+}
+.testimonial__text {
+  line-height: 28px;
+  text-align: justify;
+  max-width: 600px;
+  max-height: max-content;
+  min-height: 50px;
+  color: black;
+  font-size: 1rem;
+  font-weight: normal;
+  position: relative;
+}
+.testimonial__text > .MuiSvgIcon-root {
+  position: absolute;
+  left: -60px;
+  top: -10px;
+  transform: rotate(180deg);
+  color: gray !important;
+  font-size: 38px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3vh;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.user .user-img {
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+.user .username {
+  margin: 0;
+  color: rgb(31, 30, 30);
+  color: var(--first-color);
+}
+
+@media (max-width: 760px) {
+  .testimonial__container {
+    padding: 20px 10px;
+    height: max-content;
+  }
+
+  .testimonial {
+    max-height: max-content;
+    min-height: 50px;
+    width: 80vw;
+    padding: 10px;
+    margin-bottom: 4vh;
+  }
+  .testimonial__text > .MuiSvgIcon-root {
+    display: none;
+  }
+}
+
+.testimonial__container .splide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 80vw;
+  padding: 10px;
+}
+.testimonial__container .splide__slide {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  color: black;
+  flex-direction: column;
+  padding: 15px 20px;
+  height: max-content;
+}
+
+.splide__arrow svg {
+  color: white !important;
+  fill: white !important;
+  height: 2.5em;
+  transition: fill 0.2s linear;
+  width: 2.5em;
+}
+.splide__pagination__page.is-active {
+  background: green !important;
+}
+@media (max-width: 760px) {
+  .splide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    width: 90vw;
+    padding: 5px;
+    padding-bottom: 30px;
+    height: max-content;
+  }
+  .splide__slide {
+    width: 95%;
+    padding: 50px 10px;
+    padding-top: 0px;
+
+    padding-bottom: 20px;
+  }
+  .splide__pagination__page.is-active {
+    background: green !important;
+  }
+}
