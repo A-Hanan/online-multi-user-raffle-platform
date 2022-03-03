@@ -40,7 +40,6 @@
     "static/media/poppins-v5-latin-italic.woff": "/static/media/poppins-v5-latin-italic.676d12ff1dd049dfa8a2.woff",
     "static/media/poppins-v5-latin-800italic.woff": "/static/media/poppins-v5-latin-800italic.f59a5351655d588b08d7.woff",
     "static/media/poppins-v5-latin-700italic.woff": "/static/media/poppins-v5-latin-700italic.4b8f8468e78965f1f539.woff",
-    "index.html": "/index.html",
     "static/media/poppins-v5-latin-500.woff": "/static/media/poppins-v5-latin-500.b2313d338efe185a227c.woff",
     "static/media/poppins-v5-latin-300.woff": "/static/media/poppins-v5-latin-300.42af6974ad177cab99fa.woff",
     "static/media/poppins-v5-latin-regular.woff": "/static/media/poppins-v5-latin-regular.df9fdb2ac269114461d9.woff",
@@ -72,6 +71,7 @@
     "static/media/poppins-v5-latin-600.woff2": "/static/media/poppins-v5-latin-600.29204587c4c3b8f27c48.woff2",
     "static/media/poppins-v5-latin-800.woff2": "/static/media/poppins-v5-latin-800.6585ae8392bb122f8a68.woff2",
     "static/media/poppins-v5-latin-900.woff2": "/static/media/poppins-v5-latin-900.4c9cf88341d7f0ccc220.woff2",
+    "index.html": "/index.html",
     "main.9005e649.css.map": "/static/css/main.9005e649.css.map",
     "main.b0a8d04c.js.map": "/static/js/main.b0a8d04c.js.map",
     "787.592de070.chunk.js.map": "/static/js/787.592de070.chunk.js.map"
