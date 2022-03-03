@@ -112,7 +112,7 @@ const Account = () => {
         >
           {currentUser?.name[0]}
         </Avatar>
-        {currentUser.profile === "" && (
+        {currentUser?.profile === "" && (
           <>
             <button
               className="upload__profile__photo__btn"
